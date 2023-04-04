@@ -1,0 +1,606 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;500&family=Poppins:wght@200;300&display=swap');
+
+
+
+body {
+  background-color: rgb(76, 75, 75);
+  font-family: 'Noto Sans', sans-serif;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Navbar */
+.navbar{
+  background-color: rgb(54, 54, 54);
+}
+
+.navbar .logo {
+	padding-left: 100px;
+	font-size: 25px;
+	font-family: 'Roboto Slab', serif;
+	text-decoration-line: none;
+	color: rgb(255, 255, 255);
+}
+.navbar .logo span{
+	color: rgb(247, 146, 24);
+
+}
+
+.navbar .navbar-nav {
+	padding-right: 100px;
+	font-size:15px;
+	
+}
+
+.navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.9);
+	text-decoration: solid rgb(247, 146, 24);
+}
+
+.navbar .nav-link.active{
+	color:rgb(247, 146, 24);
+}
+
+.navbar-nav .nav-link:hover{
+    color: rgba(255, 36, 36, 0.9);
+}
+
+.navbar .loginbtn{
+	background-color: rgb(6, 175, 91);
+	color:#ffffff;
+}
+
+.navbar .loginbtn:hover{
+	background-color: rgb(17, 231, 124);
+	color:black;
+}
+
+.navbar .nav-link:hover{
+	cursor: pointer;
+}
+
+.navbar btn btn_danger mx-3{
+	background-color: rgba(167, 51, 30, 0.925);
+	
+}
+/* Form 1 */
+
+.form1{
+	background-color: rgb(248, 248, 248);
+	padding: 44px 50px ;
+	width: 400px;
+	border-radius:10px;
+	box-shadow: 10px 10px 5px rgb(87, 87, 87,0.1);
+	font-weight: 550;
+	font-size: 18px;
+
+}
+
+.form1 .hotel{
+	background-color: rgb(54, 54, 54);
+	color: white;
+	width: 100%;
+	font-size: 18px;
+}
+.form1 .hotel:hover{
+	background-color: rgb(247, 146, 24);
+	color: rgb(0, 0, 0);
+	width: 100%;
+	font-size: 18px;
+}
+
+.form1 .form-select{
+	width:100%;
+	background-color: rgb(255, 255, 255);
+}
+
+.form input{
+	width: max-content;
+}
+
+
+
+/* Header */
+
+.header{
+	background-size : cover;
+	/* background-image:url("../public/images/hero2.jpg"); */
+	margin-top: 55px;
+ 
+}
+.header .part1{
+	padding : 200px 100px;
+	color: white;
+}
+
+.header .part2{
+	padding : 100px;
+}
+
+.header2 .container{
+	margin-top: 55px;
+	text-align: center;
+	height: 500px;
+}
+.header2 .part1{
+	padding-top:  50px;
+}
+
+.header2 .part2{
+	padding-top: 50px;
+}
+
+/* Login */
+.login{
+	width: 400px;
+	background: #fff;
+	padding: 60px;
+	border-radius: 15px;
+	margin: auto;
+	margin-top: 10%;
+	box-shadow: 0px 15px 20px rgba(0,0,0,0.5);
+	font-weight: 525;
+	font-size: 18px;
+}
+
+.login h2{
+    text-align: center;
+	padding-bottom: 50px;
+}
+
+.login a{
+    text-decoration: none;
+	font-size: 20px;
+}
+
+.login .linksignup{
+	border: none;
+	background-color: white;
+	color: blue;
+	font-size: 20px;
+}
+.login button{
+	background-color:rgb(54, 54, 54) ;
+	width:100%;
+	font-size: 18px;
+	font-weight: 525;
+}
+.login button:hover{
+	background-color:  #007bff;
+	color: white;
+
+}
+
+
+.signup{
+	width: 400px;
+	background: #fff;
+	padding: 60px;
+	border-radius: 15px;
+	margin: auto;
+	margin-top: 10%;
+	box-shadow: 0px 15px 20px rgba(0,0,0,0.5);
+	font-weight: 525;
+	font-size: 18px;
+}
+
+
+.signup h2{
+    text-align: center;
+	padding-bottom: 50px;
+}
+.signup button{
+	background-color:rgb(54, 54, 54) ;
+	width:100%;
+	font-size: 18px;
+	font-weight: 525;
+}
+.signup a{
+    text-decoration: none;
+	font-size: 20px;
+}
+.signup button:hover{
+	background-color:#007bff;
+	color: white;                                                                 
+}
+
+
+
+.about{
+	background-color:  rgb(54, 54, 54);
+	color: white;
+	padding-top:50px;
+	padding-bottom: 50px;
+	margin-left: 0px;
+	text-align: center;
+}
+.about img{
+	width:60%;
+}
+.about .section-title span {
+	font-size: 30px;
+	color :rgb(247, 146, 24);
+}
+
+
+.about .section-title {
+	margin: 20px 30px;
+
+}
+
+.info{
+	background-color:rgb(54, 54, 54);
+	color: white;
+	padding-top:30px;
+}
+.info .container{
+	text-align: center;
+}
+
+.info img{
+	padding: 10px 0px;
+}
+
+.info .col{
+	padding-left:30px;
+	padding-right: 30px;
+	padding-bottom: 20px;
+}
+
+
+.info .fa-sack-dollar{
+	background-color: #EFAA00;
+	padding-top: 14px;
+	width: 65px;
+	height: 65px;
+	text-align: center;
+	border-radius: 100%;
+	margin-bottom: 10px;
+}
+.info .fa-house{
+	background-color: #CA005D;
+	width: 65px;
+	height: 65px;
+	padding: 14px;
+	text-align: center;
+	border-radius: 100%;
+	margin-bottom: 10px;
+}
+.info .fa-people-roof{
+	background-color: #007bff;
+	width: 65px;
+	height: 65px;
+	padding-top: 14px;
+	text-align: center;
+	border-radius: 100%;
+	margin-bottom: 10px;
+}
+
+/* Form 2 */
+.form2{
+	background-color: rgb(248, 248, 248);
+	/* margin: auto; */
+	padding: 44px 50px;
+	width: 500px;
+	border-radius:10px;
+	box-shadow: 10px 10px 5px rgb(87, 87, 87,0.1);
+	font-weight: 550;
+	font-size: 18px;
+
+}
+
+.form2 button{
+	background-color: rgb(54, 54, 54);
+	color: white;
+	width: 100%;
+	font-size: 18px;
+}
+.form2 button:hover{
+	background-color: rgb(247, 146, 24);
+	color: rgb(0, 0, 0);
+	width: 100%;
+	font-size: 18px;
+}
+
+.form2 .form-select{
+	width:100%;
+	background-color: rgb(255, 255, 255);
+}
+
+.form input{
+	width: max-content;
+}
+
+.form2  img{
+	height: 300px;
+	width: 400px;
+}
+
+.form2 .container .col .form-label{
+	align-items: left;
+}
+.Contact{
+	background-color:rgb(36, 34, 34);
+	color: white;
+	padding-top:50px;
+	margin-top: auto;
+}
+.Contact .container{
+	text-align: center;
+	padding-top:10px;
+}
+.Contact .logo {
+	font-size: 25px;
+	font-family: 'Roboto Slab', serif;
+	text-decoration-line: none;
+	color: rgb(255, 255, 255);
+}
+.Contact .logo span{
+	color: rgb(247, 146, 24);
+
+}
+
+.Contact .fa-social i{
+	text-align: center;
+	padding:5px;
+}
+
+.Contact .container .fir{
+	text-align: center;
+}
+.Contact .container .third .email_in{
+	background-color: white ;
+	border-style:none;
+	border-radius:2px;
+    padding: 4px;
+	/* padding-right: 30px; */
+}
+.Contact .container .third .mail_btn{
+	background-color: #ffffff;
+	padding:3px;
+	border-radius: 4px;
+	margin-left: 4px;
+}
+.Contact .container .third .fa-send{
+	color: #000000;
+	padding:4px;
+}
+.Contact h3{
+    color:#ffffff;
+	text-align: center;
+	margin-left: 28px;
+	font-weight: bold;
+}
+.Contact .sec{
+	text-align: center;
+}
+
+/* .Contact .third{
+	margin-top: 10px;
+} */
+
+.Contact .fa-social{
+	color:#ffffff;
+}
+
+.header2{
+	background-color: rgb(76, 75, 75);
+}
+
+.owner .container{
+	background-color:white;
+	padding:15px;
+	border-radius: 8px;
+	height: max-content;
+}
+
+.owner .info{
+	background-color: #fff;
+	color:black;
+	padding-top: 10px;
+	text-align: left;
+}
+
+.owner img{
+	height:250px;
+	width:350px;
+	padding:6px;
+}
+
+.ownercard{
+	margin-bottom: 40px;
+}
+.ownercard .owner-title {
+	color:white;
+}
+
+.ownercard .reload-btn button{
+	color:rgb(255, 255, 255);
+	box-shadow: none;
+	border: none;
+	background-color: #0051ca;
+	margin-top:20px;
+	padding:5px 10px 5px 10px;
+	border-radius:4px;
+}
+.ownercard .reload-btn button:hover{
+	background-color: #007bff;
+	color:#fff
+}
+
+.ownercard .update {
+	background-color: #0051ca;
+	color:white;
+}
+
+.ownercard .update:hover{
+	background-color: #007bff;
+	color:#fff;
+}
+
+.ownercard .button{
+	display: flexbox;
+}
+.ownercard .button .btn1{
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.ownercard .button .btn2{
+	display: inline-block;
+}
+
+
+.roommng{
+	background-color: aliceblue;
+}
+.roommng h1{
+	text-align: center;
+}
+.roommng img{
+	height: 400px;
+	width:500px;
+}
+
+.roommng .oldinfo{
+	 background-color: #343a40;
+	 padding:10px 30px;
+	 padding-top:30px;
+	 
+}
+.roommng .oldinfo label{
+	color:white;
+}
+
+.oldinfo .form-control{
+	/* width:15%; */
+	margin-left:10px;
+	display: inline;
+}
+
+
+
+.oldinfo #text1{
+	background-color: #343a40;
+	width: 175px;
+	border: none;
+	margin-left: 15px;
+	color : white;
+	font-weight: bold;
+	font-size: large;
+}
+
+.roommng .newinfo{
+	background-color: rgb(76, 75, 75);
+	padding:10px 30px;
+	color:#ffffff;
+	
+}
+
+.newinfo .form-control{
+	/* width:15%; */
+	margin-left:10px;
+	display: inline;
+}
+
+.newinfo #text1{
+	background-color: rgb(76, 75, 75);
+	width: 175px;
+	border: none;
+	margin-left: 15px;
+	color: white;
+	font-weight: bold;
+	font-size: large;
+}
+
+.form-control[type=files]:not(:disabled):not([readonly]){
+	width:15%;
+}
+
+.roommng .newinfo button{
+   background: #0051ca;
+   text-align:center;
+   margin-left: 825px;
+   margin-right: 825px;
+   margin-top:50px;
+   border-radius:8px;
+   color:#fff;
+   width: 100px;
+   
+}
+
+.roommng .newinfo button:hover{
+	background-color:#007bff ;
+}
+
+.Customer .container {
+	width:100px
+
+}
+
+.hotelcard{
+	margin-top:100px;
+}
+.hotelcard .owner-title {
+	color:white;
+}
+
+.hotelcard .reload-btn button{
+	color:rgb(255, 255, 255);
+	box-shadow: none;
+	border: none;
+	background-color: #0051ca;
+	margin-bottom:20px;
+	margin-left: 50%;
+	padding:5px 10px 5px 10px;
+	border-radius:4px;
+}
+.hotelcard .reload-btn button:hover{
+	background-color: #007bff;
+	color:#fff
+}
+
+.hotel .container{
+	background-color:white;
+	padding:15px;
+	border-radius: 8px;
+	height: max-content;
+	width: 800px;
+	margin-bottom: 40px;
+}
+
+.hotel .info{
+	background-color: #fff;
+	color:black;
+	padding-top: 10px;
+	text-align: left;
+}
+
+.hotel img{
+	height:250px;
+	width:350px;
+	padding:6px;
+}
+
+.hotel .button .book {
+	background-color: #0051ca;
+	margin-top:10px;
+	color:white;
+}
+
+.hotel .button .book:hover{
+	background-color: #007bff;
+	color:#fff;
+}
+
+.email {
+	background-color: white;
+	padding:30px 40px;
+	margin:30px 50px;
+	border-radius: 5px;
+}
+
+.alert{
+	margin-top:30px;
+}
