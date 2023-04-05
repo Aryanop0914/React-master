@@ -207,16 +207,34 @@ app.post("/deleteinfo", async (req, res) => {
 });
 
 app.post("/hotels", async (req, res) => {
-  const { location } = req.body;
-  // console.log(cin, cout);
-  // const startDate = new Date(cin);
-  // const endDate = new Date(cout);
-  // console.log(startDate, endDate);
+  const { location, cin, cout } = req.body;
+  const cin1 = cin;
+  const cout1 = cout;
+  console.log(cin1, cout1);
   try {
-    await Ownerde.find({
-      location: location,
-    }).then((data) => {
+    await Ownerde.aggregate([
+      {
+        $match: {
+          location: location,
+        },
+      },
+      {
+        $match: {
+          cin: {
+            $lte: cin1,
+          },
+        },
+      },
+      {
+        $match: {
+          cout: {
+            $gte: cout1,
+          },
+        },
+      },
+    ]).then((data) => {
       res.send({ status: "ok", data: data });
+      console.log(data);
     });
   } catch (error) {
     console.log(error);

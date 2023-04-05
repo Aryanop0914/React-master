@@ -1,8 +1,11 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function Form1() {
   const [location, setLocation] = useState(" ");
+  const [cin, setCin] = useState(" ");
+  const [cout, setCout] = useState(" ");
+  const navigate = useNavigate();
   return (
     <>
       <form className="form1">
@@ -28,7 +31,7 @@ export default function Form1() {
             className="form-control"
             id="check-in"
             required
-            // onChange={(e) => setCin(e.target.value)}
+            onChange={(e) => setCin(e.target.value)}
           />
         </div>
         <div className="mb-4 text-start">
@@ -40,7 +43,7 @@ export default function Form1() {
             className="form-control"
             id="check-out"
             required
-            // onChange={(e) => setCout(e.target.value)}
+            onChange={(e) => setCout(e.target.value)}
           />
         </div>
         <div className="mb-4 text-start">
@@ -65,14 +68,15 @@ export default function Form1() {
             <option value="3">3 Room</option>
           </select>
         </div>
-        <NavLink
-          to="/hotels"
-          state={{ location: location }}
+        <button
+          onClick={() =>
+            navigate("/hotels", { state: { location, cin, cout } })
+          }
           type="submit"
           className="hotel btn"
         >
           Check Availibity
-        </NavLink>
+        </button>
       </form>
     </>
   );

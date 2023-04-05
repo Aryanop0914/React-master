@@ -4,7 +4,9 @@ import Navbar from "../Components/Navbar";
 const Customer = () => {
   const { state } = useLocation();
   const location = state.location;
-  console.log(location);
+  const cin = state.cin;
+  const cout = state.cout;
+  console.log(location, cin, cout);
   const [hoteldata, setHoteldata] = useState([]);
   const [reload, setReload] = useState();
 
@@ -19,6 +21,8 @@ const Customer = () => {
       },
       body: JSON.stringify({
         location,
+        cin,
+        cout,
       }),
     })
       .then((res) => res.json())
