@@ -147,10 +147,10 @@ export default function Roommng() {
                   Check in:
                 </label>
                 <input
-                  type="date"
+                  type="text"
                   className="form-control"
                   id="disabledTextInput"
-                  placeholder={info.cin}
+                  placeholder={info.cout}
                 />
               </div>
               <div className="col mb-3">
@@ -158,7 +158,7 @@ export default function Roommng() {
                   Check out:
                 </label>
                 <input
-                  type="date"
+                  type="text"
                   className="form-control"
                   id="disabledTextInput"
                   placeholder={info.cout}
@@ -261,13 +261,13 @@ export default function Roommng() {
                   }}
                 />
               </div>
-              <div className="row g-6">
+              <div className="row g-9">
                 <div className="col mb-3">
                   <label htmlFor="check-in" className="form-label">
                     Check in:
                   </label>
                   <input
-                    type="date"
+                    type="text"
                     className="form-control"
                     id="disabledTextInput"
                     defaultValue={info.cin}
@@ -282,7 +282,7 @@ export default function Roommng() {
                     Check out:
                   </label>
                   <input
-                    type="date"
+                    type="text"
                     className="form-control"
                     id="disabledTextInput"
                     defaultValue={info.cout}
@@ -303,8 +303,7 @@ export default function Roommng() {
                     defaultValue={info.image}
                     onChange={converttobase64}
                     id="formFileMultiple"
-                    multiple
-                    required
+                    alt="Upload image to view"
                   />
                 </div>
               </div>
